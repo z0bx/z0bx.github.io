@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>theFacebook</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .link {
+        color: white;
+        text-decoration: none;
+      }
+      .nav{
+        background-color: rgb(101, 101, 218);
+        width:100%;
+      }
+      .fb {
+        color: rgb(137, 137, 235);
+        font-size: 53px;
+        font-weight: 900;
+      }
+      .container {
+        width: 1000px;
+        border: 2px, solid, blue;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .nav > td {
+        width: 100%;
+      }
+      .search, .menu{
+        border: 1px dashed blue;
+      }
+      .bodyleft{
+        width:20%;
+      }
+      .bodyleft > table{
+        width: 96%;
+        margin: 2px;
+        padding: 0;
+      }
+      td{
+        margin: 0;
+      }
+      .settings{
+        margin-left: 55%;
+      }
+      .go{
+        color: white;
+        background-color: rgb(137, 137, 235);
+        border-color: blue;
+      }
+      .top{
+        background-color: #501e57;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="container">
+      <tr class="nav">
+        <td colspan="2">
+          <table class="settings">
+            <tr>
+              <td colspan="7" class="fb">[theFacebook]</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="link">home</a></td>
+              <td><a href="#" class="link">search</a></td>
+              <td><a href="#" class="link">global</a></td>
+              <td><a href="#" class="link">social net</a></td>
+              <td><a href="#" class="link">invite</a></td>
+              <td><a href="#" class="link">faq</a></td>
+              <td><a href="#" class="link">logout</a></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr class="body">
+        <td class="bodyleft">
+          <table class="search">
+            <tr>
+              <td colspan="2"><input type="text" name="search" id="" /></td>
+            </tr>
+            <tr>
+              <td>quick search</td>
+              <td><button class="go">go</button></td>
+            </tr>
+          </table>
+          <table class="menu">
+            <tr>
+              <td>
+                <a href="#" class="menuItems">My Profile</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="#" class="menuItems">My friends</a></td>
+            </tr>
+            <td><a href="#" class="menuItems">My Groups</a></td>
+            <tr>
+              <td><a href="#" class="menuItems">My Parties</a></td>
+            </tr>
+            <tr>
+              <td><a href="#" class="menuItems">My Messages</a></td>
+            </tr>
+            <tr>
+              <td><a href="#" class="menuItems">My Account</a></td>
+            </tr>
+            <tr>
+              <td><a href="#" class="menuItems">My Privacy</a></td>
+            </tr>
+          </table>
+          <table class="ad">
+            <tr>
+                <td><img src="./solid-color-image.png" alt="ad" srcset=""></td>
+            </tr>
+          </table>
+        </td>
+        <td class="bodyright" rowspan="3">
+            <table class="profle">
+                <tr>
+                    <td class="top">Profile</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="pic">
+                            <tr>
+                                <td class="top">Picture</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="top"></td>
+                            </tr>
+                            <tr>
+                                <td class="top"></td>
+                            </tr>
+                            <tr>
+                                <td class="top"></td>
+                            </tr>
+                            <tr>
+                                <td class="top"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr colspan="7" class="top"></tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
