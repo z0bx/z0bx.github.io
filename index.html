@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        /* *{
+                /* *{
             border: 1px solid black;
         } */
         body{
             margin: 0;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLASPvTb7iJppt5rGOSqdCjh2-Og4CI3y0XA&s");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         li{
             font-size: 12px;
@@ -22,24 +26,24 @@
             text-transform: uppercase;
         }
         .container{
-            height:100vh;
             width:800px;
             margin-left: auto;
             margin-right: auto;
             display:flex;
         }
         .left{
-            height: 100%;
+            height: auto;
             width: 35%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            background-color: #fffcf2;
+            background-color: #e83135;
+
         }
         .right{
-            height: 100%;
+            height: auto;
             width: 65%;
-            background-color: #ccc5b9;
+            background-color: #b42a10;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -57,72 +61,76 @@
             margin-left: 10%;
             margin-right: 10%;
         }
+        *{
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <aside class="left">
-            <img class="profilepic" src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg" alt="zurag">
+            <img class="profilepic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnNpfbmBzLGhJSKJlcIohVYXn__pSUylH8tw&s" alt="zurag">
             <div class="contact">
-                <h3 class="lefttitle">Contact</h3><hr>
-                <ul>
-                    <li>+976 12345678</li>
-                    <li>23b1num0254@stud.num.edu.mn</li>
-                    <li>Lorem Ipsum St. Ulaanbaatar</li>
-                    <li>www.temuulen.mn</li>
-                </ul>
+                <div class="contact">
+    <h3 class="lefttitle">Contact</h3>
+    <hr>
+    <ul>
+        <li> +40 23552321</li>
+        <li> isseih@kyou.edu.jp</li>
+        <li> Devil st. Tokyo</li>
+    </ul>
+</div>
+
             </div>
             <div class="education">
                 <h3 class="lefttitle">Education</h3><hr>
                 <ul>
-                    <li>2023-2027<br>National University of Mongolia</li>
+                    <li>2011-<br>Кьюоү академи</li>
                 </ul>
             </div>
             <div class="skills">
                 <h3 class="lefttitle">Skills</h3><hr>
                 <ul>
-                    <li>Teamwork</li>
-                    <li>Leadership</li>
-                    <li>Project Management</li>
-                    <li>Critcal Thinking</li>
-                    <li>Time Management</li>
+                    <li>Boost ашиглан өөрийн байгаа хүчийг нэмэгдүүлэх</li>
+                    <li>эмэгтэйчүүдийн хувцасыг байхгүй болгох чадвар</li>
+                    <li>Цагаан лууны хүч хуваах чадвар</li>
+                    <li>Цаг хугацаагаар аялах</li>
                 </ul>
             </div>
             <div class="languages">
                 <h3 class="lefttitle">languages</h3><hr>
                 <ul>
-                    <li>Mongolian</li>
-                    <li>English</li>
+                    <li>Япон хэл</li>
+                    <li>чөтгөрийн хэл</li>
                 </ul>
             </div>
         </aside>
         <aside class="right">
             <div class="name">
-                <h1>Temuulen Bayarjargal</h1>
-                <h3>Developer</h4>
+                <h1>Issei Hyodou</h1>
+                <h4>Гремори гэх бүлийн Дунд түвшний чөтгөр</h4>
             </div>
             <div class="profile">
                 <h3 class="righttitle">Profile</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, cum expedita obcaecati dolor itaque maxime sunt corporis aut asperiores inventore quod dignissimos esse laborum omnis aliquam, doloribus, ratione quia libero!</p>
+                <p>Вельсийн улаан лууны эзэн, Гремори гэр бүлийн шатрийн хүү. Өөрийн эзэн болох Риас Греморигийн зөвшөөрлөөр хатны зэрэг дэвшиж чадна.</p>
             </div>
             <div class="career">
                 <h3 class="righttitle">Career</h3>
                 <div class="careerleft">
-<h3>2007-2011</h3>
-Kindergarden<br>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, error.
-<h3>2011-2023</h3>
-School <br>
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, aliquid!
-<h3>2023-now</h3>
-University <br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, natus!
-
+<h3>2010</h3>
+<p>Жирийн нэгэн ахлах сургуулийн сурагч, гаж донтон</p>
+<h3>2011-2012</h3>
+Доод түвшний чөтгөр
+<br><br>
+Үхээд дахин чөтгөр болон амилсан. Унасан сахиусан тэнгэрүүдийг дарж, Асиа Аржентог өөрийн гэр бүл болгон дахин амилуулсан, мөн Үхэшгүй Пхониксийг дарж, өөрийн эзэн Риас Гремориг аварсан.
+<h3>2012-2013</h3>
+Дунд түвшний чөтгөр<br><br>
+Өөрийн нандин хэрэгсэл болох улаан луутай ярилцаж чаддаг болсон бөгөөд, улаан лууны мөнхийн дайсан болох цагаан луу ба түүний эзэнтэй таарч, тулалдаж түүний хүч хуваах чадварыг өөртөө нэгтгэсэн.
                 </div>
             </div>
             <div class="end">
-                <h3>Reference</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde dolores distinctio tempora debitis ullam expedita facilis nulla repellendus beatae fugiat?</p>
+                <h3>Мөрөөдөл</h3>
+                <p>Өөрийн гэсэн чөтгөрийн баг цуглуулж, ирээдүйн эмэгтэйчүүдийн хаан болох</p>
             </div>
         </aside>
     </div>
