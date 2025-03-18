@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: #141414;
+    background: url("./cvbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 700px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+}
+h2{
+    margin: 0;
+    color: blueviolet;
+}
+.left{
+    width: 40%;
+    text-align: center;
+    background-color: purple;
+    border-top-right-radius: 140px;
+    border-bottom-left-radius: 140px;
+    height: auto;
+    border-style: groove;
+}
+.left *{
+    color: white;
+}
+.right{
+    width: 60%;
+    text-align: center;
+}
+.pfp{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 6px groove #00a0ff;
+    border-radius: 100%;
+    margin-top: 50px;
+}
+.name{
+    margin-top: 30px;
+    
+}
+ul > li{
+    list-style: none;
+    margin-left: -18%;
+}
