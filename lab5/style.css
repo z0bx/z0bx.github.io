@@ -85,9 +85,6 @@ input{
 .buttons > button{
     width: 45%;
 }
-.footer{
-    padding: 15px;
-}
 .logoimg{
     width: 120px;
     margin-top: 12px;
@@ -129,20 +126,22 @@ input{
     height: 30px;
     color:white;
     background-color: #1a176e;
-    border-top: 5px solid #2ad392;
-    border-bottom: 5px solid #2ad392;
+    border-top: 3px solid #9090a5;
+    border-bottom: 3px solid #9090a5;
+    border-left: 0;
+    border-right: 0 ;
 }
 .link{
     display: block;
-    
+    text-align: center;
 }
 a{
     color:white;
     display: block;
     background-color: #352ba5;
     font-size: 12px;
-    padding-left: 30%;
-    padding-right: 30%;
+    padding: 12px;
+
 }
 .vote{
     margin-top: 20px;
@@ -153,9 +152,21 @@ a{
 }
 .footer{
     background-color: #1b1b6c;
-    padding: 1px;
+    padding: 5px;
+    padding-left: 15px;
 }
-
+.vote > *{
+    padding:5px;
+}
+.grtop > *{
+    padding: 5px;
+}
+.send{
+    width:90%;
+    margin-left: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 
 
