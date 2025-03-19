@@ -1,3 +1,7 @@
+*{
+    padding-left:5px;
+    padding-right: 5px;
+}
 body{
     margin: 0;
     background-color: #141414;
@@ -5,6 +9,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-left-radius: 140px;
+    border-top-right-radius: 140px;
 }
 .container{
     width: 700px;
