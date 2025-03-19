@@ -149,6 +149,7 @@ a{
 }
 .alert{
     background-color: #9090a5;
+    padding-left:10px;
 }
 .footer{
     background-color: #1b1b6c;
