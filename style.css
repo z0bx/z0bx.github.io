@@ -47,12 +47,32 @@ h2{
     border: 6px groove #00a0ff;
     border-radius: 100%;
     margin-top: 50px;
+    padding: 0;
 }
 .name{
     margin-top: 30px;
-    
 }
 ul > li{
     list-style: none;
-    margin-left: -18%;
+}
+.car{
+    background-color: rgb(189, 31, 189);
+    color: white;
+    padding:15px;
+    margin:15px;
+    box-shadow: 10px 10px rgb(160, 92, 224);
+}
+.info{
+    background-color: rgb(31, 189, 115);
+    color: white;
+    padding:15px;
+    margin:15px;
+    box-shadow: 10px 10px rgb(96, 145, 19);
+}
+.foot{
+    background-color: rgb(218, 87, 26);
+    color: white;
+    padding:15px;
+    margin:15px;
+    box-shadow: 10px 10px rgb(243, 26, 26);
 }
