@@ -80,7 +80,7 @@ input{
 }
 .buttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .buttons > button{
     width: 45%;
@@ -150,6 +150,7 @@ a{
 .alert{
     background-color: #9090a5;
     padding-left:10px;
+    padding: 10px;
 }
 .footer{
     background-color: #1b1b6c;
