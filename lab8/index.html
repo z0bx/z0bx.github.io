@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>Бодлогын Цуглуулга</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Бодлого бүрт гарц</h1>
+
+    <section>
+        <h2>1. Нэр палиндром эсэх</h2>
+        <input type="text" id="nameInput" placeholder="Нэрээ оруулна уу">
+        <button onclick="checkPalindrome()">Шалгах</button>
+        <div class="result" id="palindromeResult"></div>
+    </section>
+
+    <section>
+        <h2>2. Тооны цифрүүдийн нийлбэр</h2>
+        <input type="number" id="digitSumInput" placeholder="Тоогоо оруулна уу">
+        <button onclick="digitSum()">Олох</button>
+        <div class="result" id="digitSumResult"></div>
+    </section>
+
+    <section>
+        <h2>3. Тоог анхны тоон нийлбэрт задал</h2>
+        <input type="number" id="primeDecomposeInput" placeholder="Тоогоо оруулна уу">
+        <button onclick="primeDecompose()">Задлах</button>
+        <div class="result" id="primeDecomposeResult"></div>
+    </section>
+
+    <section>
+        <h2>4. Чоно туулай гүйцэх хугацаа</h2>
+        <input type="number" id="distanceInput" placeholder="Зай км">
+        <button onclick="catchUp()">Тооцоолох</button>
+        <div class="result" id="catchUpResult"></div>
+    </section>
+
+    <section>
+        <h2>5. Тэгш сондгой ялгах</h2>
+        <input type="text" id="arrayInput" placeholder="Жишээ: 1,2,3,4,5">
+        <button onclick="evenOdd()">Ялгах</button>
+        <div class="result" id="evenOddResult"></div>
+    </section>
+
+    <section>
+        <h2>6. Айлын тооноос байр олох</h2>
+        <input type="number" id="flatNumberInput" placeholder="Тоот">
+        <button onclick="findApartment()">Олох</button>
+        <div class="result" id="apartmentResult"></div>
+    </section>
+
+    <section>
+        <h2>7. Өглөө оройны дүрс</h2>
+        <button onclick="showBox()">Дүрсийг харуулах</button>
+        <div id="boxContainer"></div>
+    </section>
+
+    <section>
+        <h2>8. Петягийн хожих боломж</h2>
+        <input type="number" id="coinsInput" placeholder="n - нийт зоос">
+        <input type="number" id="kInput" placeholder="k - эхний авалт">
+        <button onclick="petyasGame()">Хариу</button>
+        <div class="result" id="gameResult"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
