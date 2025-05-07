@@ -1,0 +1,10 @@
+[
+    { "name": "USD", "value": 1 },
+    { "name": "EUR", "value": 0.88 },
+    { "name": "POUND", "value": 0.75 },
+    { "name": "WON", "value": 1433 },
+    { "name": "YEN", "value": 142 },
+    { "name": "YAN", "value": 7.31 },
+    { "name": "MNT", "value": 3537 }
+  ]
+  

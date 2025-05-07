@@ -1,33 +1,50 @@
 body {
     background: url("image.png");
-    background-size: contain;
+    background-size: cover;
+    font-family: Arial;
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0;  
   }
   
   .calculator {
     background: #f7f8fb3b;
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px #fff;
-    width: 300px;
+    width: 280px;
+    color: white;
   }
   
-  #display {
-    width: 93%;
-    height: 50px;
+  .display {
+    color: #fff;
+    padding: 15px;
     font-size: 24px;
-    text-align: right;
+    border-radius: 8px;
     margin-bottom: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff00;
-    color:#fff;
+    text-align: right;
+    overflow-x: auto;
+  }
+  
+  .selectors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  select {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    border:none;
+    border-radius: 25px;
+    background-color: #ffffff63;
+    color:#fff;     
+  }
+  option{
+    background-color: #00000020;
+    color: #fff;
   }
   
   .buttons {
@@ -37,20 +54,25 @@ body {
   }
   
   button {
-    padding: 20px;
+    padding: 15px;
     font-size: 18px;
     background: #ffffff63;
-    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    color: white;
     cursor: pointer;
   }
   
   button:hover {
-    background: #ffffff90;
+    background: #ffffff80;
   }
   
-  button.zero {
+  .equal {
     grid-column: span 2;
+    background: #0077ff;
+  }
+  
+  .equal:hover {
+    background: #005fcc;
   }
   
