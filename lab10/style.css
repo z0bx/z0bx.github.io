@@ -571,6 +571,6 @@ button:active {
     width: 100%;
   }
 }
-.container > #show-leaderboard-button-win{
+#login-screen > #show-leaderboard-button-win{
   max-width: 400px;
 }
