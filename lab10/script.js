@@ -21,7 +21,7 @@
             { word: "ГЭГЭЭН", hint: "Гэрэлтэй холбоотой" },
             { word: "ХУЛГАНА", hint: "Жижиг амьтан" },
             { word: "ШИРЭЭ", hint: "Тавилга" },
-            { word: "ҮҮЛЭН", hint: "Тэнгэрийн үзэгдэл" },
+            { word: "БОРОО", hint: "Тэнгэрийн үзэгдэл" },
             { word: "ДАЛАЙ", hint: "Усны их биет" },
             { word: "НОМ", hint: "Уншдаг зүйл" },
             { word: "ХҮРД", hint: "Эргэх механизм" },
@@ -380,9 +380,11 @@
             winScreen.style.display = 'none';
             timeUpScreen.style.display = 'none';
             gameArea.style.display = 'none';
+            loginScreen.style.display = 'none';
             
             // Show leaderboard
             leaderboardScreen.style.display = 'block';
+            gameArea.style.display = 'none';
             
             // Populate leaderboard
             populateLeaderboard();

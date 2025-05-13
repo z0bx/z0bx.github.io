@@ -1,109 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Hangman Game</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дүүжилж алъя</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Login Screen -->
     <div class="container" id="login-screen">
-        <form class="login-form" id="login-form">
-            <h2>Hangman Game</h2>
-            <div class="input-group">
-                <label for="nickname">Нэрээ оруулна уу</label>
-                <input type="text" id="nickname" placeholder="Enter your nickname" required />
-            </div>
-            <button type="submit" id="start-button">Эхлэх</button>
-        </form>
-    </div>
-    
-    <!-- Game Screen -->
-    <div class="container" id="game-area">
-        <h2>Hangman Game</h2>
-        
-        <div class="game-info">
-            <div>
-                <p>Тоглогч: <span id="player-name"></span></p>
-                <p class="score">Оноо: <span id="score">0</span></p>
-            </div>
-            <div class="timer">Хугацаа: <span id="timer">01:00</span></div>
+      <form class="login-form" id="login-form">
+        <h2>Дүүжилж алъя</h2>
+        <div class="input-group">
+          <label for="nickname">Нэрээ оруулна уу</label>
+          <input
+            type="text"
+            id="nickname"
+            placeholder="Enter your nickname"
+            required
+          />
         </div>
-        
-        <div class="hint" id="hint"></div>
-        
-        <div class="hangman-drawing">
-            <!-- Scaffold parts (always visible) -->
-            <div class="hangman-part" id="scaffold-base" style="display: block;"></div>
-            <div class="hangman-part" id="scaffold-post" style="display: block;"></div>
-            <div class="hangman-part" id="scaffold-beam" style="display: block;"></div>
-            <div class="hangman-part" id="scaffold-rope" style="display: block;"></div>
-            
-            <!-- Hangman parts (appear with wrong guesses) -->
-            <div class="hangman-part" id="head"></div>
-            <div class="hangman-part" id="body"></div>
-            <div class="hangman-part" id="left-arm"></div>
-            <div class="hangman-part" id="right-arm"></div>
-            <div class="hangman-part" id="left-leg"></div>
-            <div class="hangman-part" id="right-leg"></div>
-        </div>
-        
-        <div class="word-container" id="word-container"></div>
-        
-        <div class="keyboard" id="keyboard"></div>
-    </div>
-    
-    <!-- Game Over Screen -->
-    <div class="container" id="game-over-screen">
-        <h2>Game Over</h2>
-        <p class="result-message">Та хожигдлоо!</p>
-        <p class="answer">Зөв хариулт: <span id="correct-word"></span></p>
-        <button id="try-again-button">Дахин тоглох</button>
-        <button id="show-leaderboard-button-gameover">Шилдэгүүд</button>
-    </div>
-    
-    <!-- Win Screen -->
-    <div class="container" id="win-screen">
-        <h2>Баяр хүргэе!</h2>
-        <p class="result-message">Та зөв таалаа!</p>
-        <p class="score">Таны оноо: <span id="final-score"></span></p>
-        <button id="next-word-button">Дараагийн үг</button>
-        <button id="show-leaderboard-button-win">Шилдэгүүд</button>
-    </div>
-    
-    <!-- Time Up Screen -->
-    <div class="container" id="time-up-screen">
-        <h2>Хугацаа дууслаа!</h2>
-        <p class="result-message">Таны эцсийн оноо: <span id="time-up-score"></span></p>
-        <div id="high-score-message"></div>
-        <button id="play-again-button">Дахин тоглох</button>
-        <button id="show-leaderboard-button-timeup">Шилдэгүүд</button>
-    </div>
-    
-    <!-- Leaderboard Screen -->
-    <div class="container" id="leaderboard-screen">
-        <h2>TOP 10 Тоглогчид</h2>
-        <table class="leaderboard-table">
-            <thead>
-                <tr>
-                    <th>№</th>
-                    <th>Нэр</th>
-                    <th>Оноо</th>
-                </tr>
-            </thead>
-            <tbody id="leaderboard-body">
-                <!-- Leaderboard data will be inserted here -->
-            </tbody>
-        </table>
-        <div class="menu-buttons">
-            <button class="menu-button" id="back-to-game-button">Буцах</button>
-            <button class="menu-button" id="new-game-button">Шинэ тоглоом</button>
-        </div>
+        <button type="submit" id="start-button">Эхлэх</button>
+      </form>
+      <button id="show-leaderboard-button-win">Шилдэгүүд</button>
     </div>
 
-    <script src="script.js">
-        
-    </script>
-</body>
+    <!-- Game Screen -->
+    <div class="container" id="game-area">
+      <h2>Дүүжилж алъя</h2>
+
+      <div class="game-info">
+        <div>
+          <p>Тоглогч: <span id="player-name"></span></p>
+          <p class="score">Оноо: <span id="score">0</span></p>
+        </div>
+        <div class="timer">Хугацаа: <span id="timer">01:00</span></div>
+      </div>
+
+      <div class="hint" id="hint"></div>
+
+      <div class="hangman-drawing">
+        <!-- Scaffold parts (always visible) -->
+        <div
+          class="hangman-part"
+          id="scaffold-base"
+          style="display: block"
+        ></div>
+        <div
+          class="hangman-part"
+          id="scaffold-post"
+          style="display: block"
+        ></div>
+        <div
+          class="hangman-part"
+          id="scaffold-beam"
+          style="display: block"
+        ></div>
+        <div
+          class="hangman-part"
+          id="scaffold-rope"
+          style="display: block"
+        ></div>
+
+        <!-- Hangman parts (appear with wrong guesses) -->
+        <div class="hangman-part" id="head"></div>
+        <div class="hangman-part" id="body"></div>
+        <div class="hangman-part" id="left-arm"></div>
+        <div class="hangman-part" id="right-arm"></div>
+        <div class="hangman-part" id="left-leg"></div>
+        <div class="hangman-part" id="right-leg"></div>
+      </div>
+
+      <div class="word-container" id="word-container"></div>
+
+      <div class="keyboard" id="keyboard"></div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div class="container" id="game-over-screen">
+      <h2>Game Over</h2>
+      <p class="result-message">Та хожигдлоо!</p>
+      <p class="answer">Зөв хариулт: <span id="correct-word"></span></p>
+      <button id="try-again-button">Дахин тоглох</button>
+      <button id="show-leaderboard-button-gameover">Шилдэгүүд</button>
+    </div>
+
+    <!-- Win Screen -->
+    <div class="container" id="win-screen">
+      <h2>Баяр хүргэе!</h2>
+      <p class="result-message">Та зөв таалаа!</p>
+      <p class="score">Таны оноо: <span id="final-score"></span></p>
+      <button id="next-word-button">Дараагийн үг</button>
+      <button id="show-leaderboard-button-win">Шилдэгүүд</button>
+    </div>
+
+    <!-- Time Up Screen -->
+    <div class="container" id="time-up-screen">
+      <h2>Хугацаа дууслаа!</h2>
+      <p class="result-message">
+        Таны эцсийн оноо: <span id="time-up-score"></span>
+      </p>
+      <div id="high-score-message"></div>
+      <button id="play-again-button">Дахин тоглох</button>
+      <button id="show-leaderboard-button-timeup">Шилдэгүүд</button>
+    </div>
+
+    <!-- Leaderboard Screen -->
+    <div class="container" id="leaderboard-screen">
+      <h2>TOP 10 Тоглогчид</h2>
+      <table class="leaderboard-table">
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Нэр</th>
+            <th>Оноо</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body">
+          <!-- Leaderboard data will be inserted here -->
+        </tbody>
+      </table>
+      <div class="menu-buttons">
+        <button
+          class="menu-button"
+          id="back-to-game-button"
+          style="display: none"
+        >
+          Буцах
+        </button>
+        <button class="menu-button" id="new-game-button">Шинэ тоглоом</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

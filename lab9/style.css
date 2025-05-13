@@ -1,78 +1,82 @@
 body {
-    background: url("image.png");
-    background-size: cover;
-    font-family: Arial;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    margin: 0;  
-  }
-  
-  .calculator {
-    background: linear-gradient(#ffffff17, #f7f8fb3b);
-    border-radius: 12px;
-    padding: 20px;
-    width: 280px;
-    color: white;
-  }
-  
-  .display {
-    color: #fff;
-    padding: 15px;
-    font-size: 24px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    text-align: right;
-    overflow-x: auto;
-  }
-  
-  .selectors {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  select {
-    flex: 1;
-    padding: 5px;
-    font-size: 16px;
-    border:none;
-    border-radius: 25px;
-    background-color: #ffffff63;
-    color:#fff;     
-  }
-  option{
-    background-color: #00000020;
-    color: #fff;
-  }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  }
-  
-  button {
-    padding: 15px;
-    font-size: 18px;
-    background: #cee9fc88;
-    border: none;
-    border-radius: 25px;
-    color: #f5ffff;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #ffffff80;
-  }
-  
-  .equal {
-    grid-column: span 2;
-    background: #0077ff;
-  }
-  
-  .equal:hover {
-    background: #005fcc;
-  }
-  
+  background: url("image.png");
+  background-size: cover;
+  font-family: Arial;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.calculator {
+  background: linear-gradient(#0c7dcb17, #f7f8fb3b);
+  border-radius: 12px;
+  padding: 20px;
+  width: 230px;
+  color: white;
+}
+
+.display {
+  color: #fff;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: right;
+  overflow-x: auto;
+}
+
+.selectors {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+select {
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffffff63;
+  color: #fff;
+}
+option {
+  background-color: #00000020;
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  background: #cee9fc88;
+  border: none;
+  border-radius: 25px;
+  color: #f5ffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffffff80;
+}
+
+.equal {
+  grid-column: span 2;
+  background: #0077ff;
+}
+
+.equal:hover {
+  background: #005fcc;
+}
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
