@@ -10,7 +10,7 @@ body {
   }
   
   .calculator {
-    background: #f7f8fb3b;
+    background: linear-gradient(#ffffff17, #f7f8fb3b);
     border-radius: 12px;
     padding: 20px;
     width: 280px;
@@ -56,10 +56,10 @@ body {
   button {
     padding: 15px;
     font-size: 18px;
-    background: #ffffff63;
+    background: #cee9fc88;
     border: none;
     border-radius: 25px;
-    color: white;
+    color: #f5ffff;
     cursor: pointer;
   }
   
