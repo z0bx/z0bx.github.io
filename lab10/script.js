@@ -298,8 +298,8 @@
             
             if (result === 'win') {
                 finalScoreDisplay.textContent = score;
+                winScreen.style.display = 'block';
                 gameArea.style.display = 'none';
-                nextWord();
             } else if (result === 'lose') {
                 correctWordDisplay.textContent = currentWord;
                 gameOverScreen.style.display = 'block';
