@@ -31,23 +31,22 @@ function populateDropdowns() {
 }
 
 function appendNumber(num) {
-    let current = display.textContent;
-  
-    // Prevent multiple leading zeros
-    if (current === "0" && num === "0") return;
-  
-    // Replace "0" with non-dot number (e.g., "05" -> "5")
-    if (current === "0" && num !== ".") {
-      display.textContent = num;
-      return;
-    }
-  
-    // Prevent multiple decimals
-    if (num === "." && current.includes(".")) return;
-  
-    display.textContent += num;
+  let current = display.textContent;
+
+  // Prevent multiple leading zeros
+  if (current === "0" && num === "0") return;
+
+  // Replace "0" with non-dot number (e.g., "05" -> "5")
+  if (current === "0" && num !== ".") {
+    display.textContent = num;
+    return;
   }
-  
+
+  // Prevent multiple decimals
+  if (num === "." && current.includes(".")) return;
+
+  display.textContent += num;
+}
 
 function clearDisplay() {
   display.textContent = "0";
@@ -73,7 +72,17 @@ function convertCurrency() {
   let toRate = parseFloat(toSelect.value);
   let result = (amount * toRate / fromRate).toFixed(2);
 
-  var resultz = document.createElement("p");
-  resultz.innerHTML = result;
-  document.body.calculator.appendChild(resultz);
+  // Display result in a new paragraph element
+  let resultz = document.createElement("p");
+  resultz.innerHTML = `Converted amount: ${result}`;
+  
+  // Assuming you want to display it in a specific container or below the display
+  let resultContainer = document.getElementById("resultContainer"); // Make sure to create this container in your HTML
+  if (!resultContainer) {
+    resultContainer = document.createElement("div");
+    resultContainer.id = "resultContainer";
+    document.body.appendChild(resultContainer);
+  }
+  resultContainer.innerHTML = ""; // Clear any previous results
+  resultContainer.appendChild(resultz);
 }
