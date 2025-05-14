@@ -68,6 +68,7 @@
         const timerDisplay = document.getElementById('timer');
         const hintDisplay = document.getElementById('hint');
         const wordContainer = document.getElementById('word-container');
+        const winScreen = document.getElementById('win-screen');
         const keyboardEl = document.getElementById('keyboard');
         const gameOverScreen = document.getElementById('game-over-screen');
         const timeUpScreen = document.getElementById('time-up-screen');
