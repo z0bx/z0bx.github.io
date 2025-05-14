@@ -298,7 +298,6 @@
             
             if (result === 'win') {
                 finalScoreDisplay.textContent = score;
-                winScreen.style.display = 'none';
                 gameArea.style.display = 'none';
                 nextWord();
             } else if (result === 'lose') {
