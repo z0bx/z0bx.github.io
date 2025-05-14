@@ -16,6 +16,7 @@ background: linear-gradient(9deg,rgba(12, 125, 203, 1) 50%, rgba(247, 248, 251, 
   padding: 20px;
   width: 250px;
   color: white;
+  scale: 130%;
 }
 
 .display {
