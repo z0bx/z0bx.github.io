@@ -202,7 +202,7 @@
             });
             
             // Hide win/game over screens
-            .style.display = 'none';
+            winScreen.style.display = 'none';
             gameOverScreen.style.display = 'none';
             gameArea.style.display = 'block';
             
