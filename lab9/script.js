@@ -73,5 +73,7 @@ function convertCurrency() {
   let toRate = parseFloat(toSelect.value);
   let result = (amount * toRate / fromRate).toFixed(2);
 
-  display.textContent = result;
+  var resultz = document.createElement("p");
+  resultz.innerHTML = result;
+  document.body.calculator.appendChild(resultz);
 }
