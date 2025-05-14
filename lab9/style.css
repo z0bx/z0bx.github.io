@@ -13,7 +13,7 @@ body {
   background: linear-gradient(#0c7dcb17, #f7f8fb3b);
   border-radius: 12px;
   padding: 20px;
-  width: 230px;
+  width: 250px;
   color: white;
 }
 
@@ -40,7 +40,7 @@ select {
   border: none;
   border-radius: 25px;
   background-color: #ffffff63;
-  color: #fff;
+  color: #005fcc;
 }
 option {
   background-color: #00000020;
@@ -58,7 +58,7 @@ button {
   font-size: 18px;
   background: #cee9fc88;
   border: none;
-  border-radius: 25px;
+  border-radius: 30px;
   color: #f5ffff;
   cursor: pointer;
 }
