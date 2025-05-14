@@ -202,7 +202,7 @@
             });
             
             // Hide win/game over screens
-            winScreen.style.display = 'none';
+            .style.display = 'none';
             gameOverScreen.style.display = 'none';
             gameArea.style.display = 'block';
             
@@ -298,8 +298,9 @@
             
             if (result === 'win') {
                 finalScoreDisplay.textContent = score;
-                winScreen.style.display = 'block';
+                winScreen.style.display = 'none';
                 gameArea.style.display = 'none';
+                nextWord();
             } else if (result === 'lose') {
                 correctWordDisplay.textContent = currentWord;
                 gameOverScreen.style.display = 'block';
