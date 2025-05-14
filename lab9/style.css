@@ -10,7 +10,8 @@ body {
 }
 
 .calculator {
-  background: linear-gradient(#0c7dcb17, #f7f8fb3b);
+background: #0C7DCB;
+background: linear-gradient(9deg,rgba(12, 125, 203, 1) 50%, rgba(247, 248, 251, 1) 100%);
   border-radius: 12px;
   padding: 20px;
   width: 250px;
