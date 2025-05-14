@@ -70,7 +70,6 @@
         const wordContainer = document.getElementById('word-container');
         const keyboardEl = document.getElementById('keyboard');
         const gameOverScreen = document.getElementById('game-over-screen');
-        const winScreen = document.getElementById('win-screen');
         const timeUpScreen = document.getElementById('time-up-screen');
         const leaderboardScreen = document.getElementById('leaderboard-screen');
         const correctWordDisplay = document.getElementById('correct-word');
