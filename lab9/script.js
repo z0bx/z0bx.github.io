@@ -1,6 +1,7 @@
 let display = document.getElementById("display");
 let fromSelect = document.getElementById("fromCurrency");
 let toSelect = document.getElementById("toCurrency");
+let resultDisplay = document.getElementById("resultContainer");
 let exchangeRates = [];
 
 fetch("exchangeRates.json")
@@ -51,6 +52,9 @@ function appendNumber(num) {
 function clearDisplay() {
   display.textContent = "0";
 }
+function clearResult(){
+  resultDisplay.textContent = "0";
+}
 
 function backspace() {
   let current = display.textContent;
@@ -73,16 +77,11 @@ function convertCurrency() {
   let result = (amount * toRate / fromRate).toFixed(2);
 
   // Display result in a new paragraph element
-  let resultz = document.createElement("p");
-  resultz.innerHTML = `Converted amount: ${result}`;
+  let resultz = document.createElement("div");
+  resultz.innerHTML = `${result}`;
   
   // Assuming you want to display it in a specific container or below the display
-  let resultContainer = document.getElementById("resultContainer"); // Make sure to create this container in your HTML
-  if (!resultContainer) {
-    resultContainer = document.createElement("div");
-    resultContainer.id = "resultContainer";
-    document.body.appendChild(resultContainer);
-  }
+  let resultContainer = document.getElementById("resultContainer"); 
   resultContainer.innerHTML = ""; // Clear any previous results
   resultContainer.appendChild(resultz);
 }
